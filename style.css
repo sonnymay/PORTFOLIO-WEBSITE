@@ -9,6 +9,30 @@
     font-family: "Jost", sans-serif;
     font-weight: 400;
   }
+
+.person-img {
+  /* set the width and height of the image */
+  width: 200px;
+  height: 200px;
+}
+
+/* define the spin animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* apply the animation on hover */
+.person-img:hover {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
   
   html {
     font-size: 62.5%;
