@@ -14,6 +14,8 @@
   /* set the width and height of the image */
   width: 200px;
   height: 200px;
+  transform: translateX(0px);
+  animation: float 6s ease-in-out infinite;
 }
 
 /* define the spin animation */
@@ -23,6 +25,18 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
   }
 }
 
