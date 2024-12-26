@@ -1,40 +1,110 @@
 # PORTFOLIO-WEBSITE
 
-Sonny May's Personal Website
+## Overview
+This is Sonny May's personal portfolio website, showcasing skills, projects, and professional experience. The website is built with modern web technologies and features a responsive, animated interface with dark mode support.
 
-This is the repository for Sonny May's personal website hosted at https://www.sonny-may.com/. The website showcases Sonny's portfolio, skills, and blog posts.
+## Live Demo
+Visit the live website: [sonny-may.com](https://www.sonny-may.com/)
 
-Getting Started
+## Features
+- 🎨 Modern, responsive design
+- 🌓 Dark/Light mode toggle
+- ✨ Smooth animations and transitions
+- 📱 Mobile-first approach
+- 📂 Filterable project showcase
+- 📊 Interactive skill progress bars
+- 📝 Contact form with validation
+- ⚡ Optimized performance
 
-You can visit the website by clicking here. If you want to clone the repository to your local machine, follow these steps:
+## Technologies Used
+### Frontend
+- React.js
+- Framer Motion (animations)
+- Tailwind CSS (styling)
+- Lucide Icons
 
-1. Clone the repository to your local machine using git clone https://github.com/sonnymay/sonnymay.github.io.git.
-2. Navigate to the project directory using cd sonnymay.github.io.
-3. Open the index.html file in your web browser.
+### Dev Tools
+- Vite
+- PostCSS
+- Git
 
-Technologies Used
+## Getting Started
 
-The website was built using the following technologies:
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-- HTML5
-- CSS3
-- JavaScript
-- jQuery
-- Bootstrap
-- Font Awesome
+### Installation
+1. Clone the repository
+```bash
+git clone https://github.com/sonnymay/PORTFOLIO-WEBSITE.git
+cd PORTFOLIO-WEBSITE
+```
 
-Features
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
 
-The website includes the following features:
+3. Start development server
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-- Responsive design that looks great on desktop and mobile devices
-- Portfolio section that showcases Sonny's work
-- Skills section that highlights Sonny's technical skills
-- Blog section that features Sonny's latest blog posts
-- Contact form that allows users to send messages to Sonny
-- Social media links that allow users to connect with Sonny on various platforms
+4. Build for production
+```bash
+npm run build
+# or
+yarn build
+```
 
-Contributing
+## Project Structure
+```
+PORTFOLIO-WEBSITE/
+├── src/
+│   ├── components/         
+│   │   ├── About/
+│   │   ├── Contact/
+│   │   ├── Projects/
+│   │   └── shared/
+│   ├── styles/            
+│   ├── hooks/
+│   ├── data/
+│   └── utils/
+├── public/
+└── package.json
+```
 
-Contributions to this project are not currently being accepted as this is a personal website. However, if you notice any issues with the website, feel free to create an issue on the GitHub repository.
+## Key Features Breakdown
+- **Responsive Navigation**: Modern navbar with mobile menu and dark mode toggle
+- **Animated Hero Section**: Engaging introduction with animated elements
+- **Projects Showcase**: Filterable grid of projects with search functionality
+- **About Section**: Professional background with animated skill bars
+- **Contact Form**: Interactive form with validation and submission handling
+- **Dark Mode**: System-aware theme switching
 
+## Performance Optimizations
+- Lazy loading of images
+- Code splitting
+- Optimized animations
+- Responsive images
+
+## Contributing
+While this is a personal portfolio website, suggestions and feedback are welcome! Feel free to:
+1. Report bugs
+2. Suggest new features
+3. Submit pull requests
+
+## Contact
+- GitHub: [@sonnymay](https://github.com/sonnymay)
+- LinkedIn: [Sonny May](https://linkedin.com/in/sonnymay)
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+Made with ❤️ by Sonny May
