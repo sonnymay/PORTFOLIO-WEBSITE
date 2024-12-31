@@ -3,7 +3,7 @@ const navbarOffsetTop = navbar.offsetTop;
 const sections = document.querySelectorAll("section");
 const navbarLinks = document.querySelectorAll(".navbar-link");
 const progress = document.querySelector(".progress-bars-wrapper");
-const progressBarPercents = [95, 90, 70, 60, 55, 50, 50, 70, 60, 50];
+const progressBarPercents = [95, 90, 80, 75, 75, 70, 70, 85, 75, 70];
 
 window.addEventListener("scroll", () => {
   mainFn();
@@ -74,9 +74,7 @@ window.addEventListener('scroll', () => {
 const backToTopButton = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
-  if (document && document.
-
-    body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       backToTopButton.style.display = "block";
   } else {
       backToTopButton.style.display = "none";

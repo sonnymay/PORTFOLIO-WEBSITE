@@ -202,18 +202,27 @@
   .progress-bar {
     width: 60rem;
     height: 3rem;
-    background-color: #ccc;
+    background-color: #f4f4f4;
     margin: 1.5rem 0;
     border-radius: 0.3rem;
     box-shadow: 0.2rem 0.2rem 1rem #555;
     position: relative;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+
+  .progress-bar:hover {
+    transform: translateX(10px);
+    background-color: #fff;
   }
   
   .progress-text {
     position: absolute;
     left: 1rem;
     font-size: 1.5rem;
-    color: #fff;
+    color: #333;
+    font-weight: 500;
   }
   
   .progress-text span {
@@ -228,6 +237,14 @@
     background-color: #e41c6f;
     border-radius: 0.3rem;
     transition: width 0.5s 0.5s ease-in-out;
+  }
+
+  .skill-level {
+    color: #e41c6f;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 1rem;
   }
   
   .services {
@@ -263,6 +280,68 @@
     transform: skew(-10deg);
     box-shadow: 0.2rem 0.2rem 0.5rem #555;
   }
+
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card i {
+    font-size: 3rem;
+    color: #e41c6f;
+    margin-bottom: 1.5rem;
+}
+
+.skill-card h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.skill-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-card ul li {
+    font-size: 1.6rem;
+    color: #666;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.skill-card ul li::before {
+    content: "•";
+    color: #e41c6f;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}
   /* End of Section 2 */
   
   /* Section 3 */
